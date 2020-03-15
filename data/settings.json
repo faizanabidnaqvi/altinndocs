@@ -12,7 +12,10 @@
     {
       "section": "Endpoints in use",
       "topics": [
-
+        {
+          "title": "GetAuthenticationChallenge",
+          "slug": "GetAuthenticationChallenge"
+        }
       ]
     },
     {
