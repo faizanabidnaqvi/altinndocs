@@ -8,7 +8,7 @@ This is used to authenticate the user with Altinn. The users receive an SMS pin 
 
 ### Authentication Methods
 
-When users login through Altinn they get to choose from several possible types of login as shown below:
+When users login through Altinn they get to choose from several possible types of login as shown below: 
 
 ![](/Screenshot 2020-03-15 at 7.47.16 PM.png)
 
