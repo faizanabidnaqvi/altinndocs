@@ -36,6 +36,10 @@
         {
           "title": "GetAvailableServicesBasicV3",
           "slug": "get-available-services"
+        },
+        {
+          "title": "GetFormTaskSchemaDefinition",
+          "slug": "get-form-task"
         }
       ]
     },
