@@ -15,6 +15,7 @@ fields:
   name: slug
   label: slug
 pages:
+- docs/2020.md
 - docs/editing-in-forestry.md
 - docs/getreporteeelementlistbasicv2.md
 - docs/how-to-get-schema.md
