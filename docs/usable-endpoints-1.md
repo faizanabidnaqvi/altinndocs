@@ -39,7 +39,7 @@ UserPassword: The password used for MINID. Similar to SSN, this should NEVER be 
 
 This will result in sending an SMS to the user which is valid for 20 mins (recheck) of inactivity. The SMS will be used for all subsequent authentication for the user.
 
-Response Example:
+Response Example: 
 
     <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
        <s:Body>
