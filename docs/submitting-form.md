@@ -8,7 +8,7 @@ slug: submit-form
 
 The RF-1189 form needs to be attached to an existing RF-1030 form. The basic steps to submit a full form are as follows:
 
-1. Find out which RF-1030 form does the user wish to attach the RF-1189 form to. In the app, this will be either the current or the last year.
+1. Find out which RF-1030 form does the user wish to attach the RF-1189 form to. In the app, this will be either the current or the **last tax year**.
 2. Authenticate the user.
 3. Find the ReporteeElementID for the form they wish to attach RF-1189 to.
 4. Generate the RF-1189 form
@@ -20,6 +20,18 @@ Each year, say 2020, requires the form from the previous year to be submitted. B
 
 For example, in 2020 the application RF-1030 form will be for 2019 (current year submission) and 2018 (previous year)
 
+[See Forms section](/forms-2020)
+
 ## Authenticate the user
 
-Use the 
+Use the [GetAuthenticationChallenge](/get-authentication-challenge) end point to authenticate the user. The AltinnPin method will result in sending a SMS pin to the user which they need to enter in the app; this will be used for retrieving RF-1030 form and sending in RF-1189 form.
+
+1. Ask the user to input their UserSSN and UserPassword (AltinnPin auth method)
+2. Send the SOAP envelope to the server
+3. Check that the response field a:Status is OK (any other output or not found is not)
+4. 
+
+## Find the ReporteeElementID
+
+1. 
+2. Use the [GetReporteeElementListBasicV2](/get-reportee-element-list) end point to
