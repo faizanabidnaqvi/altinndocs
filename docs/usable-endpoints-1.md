@@ -1,12 +1,10 @@
 ---
-title: Usable Endpoints
+title: GetAuthenticationChallenge
 date: 2020-03-13
-slug: end-points
+slug: GetAuthenticationChallenge
 
 ---
-## GetAuthenticationChallenge
-
-This is used to authenticate the user with Altinn.
+This is used to authenticate the user with Altinn. The users receive an SMS pin that is then used for subsequent request to other endpoints.
 
 ### Authentication Methods
 
@@ -14,7 +12,7 @@ When users login through Altinn they get to choose from several possible types o
 
 ![](/Screenshot 2020-03-15 at 7.47.16 PM.png)
 
-When authenticating through SOAP we need to specify the method. Methods correspond to one of the above. 
+When authenticating through SOAP we need to specify the method. Methods correspond to one of the above.
 
 #### AltinnPin
 
@@ -41,6 +39,17 @@ UserPassword: The password used for MINID. Similar to SSN, this should NEVER be 
 
 This will result in sending an SMS to the user which is valid for 20 mins (recheck) of inactivity. The SMS will be used for all subsequent authentication for the user.
 
-Response Example (link)
+Response Example:
 
-GetReporteeElementListBasicV2
+    <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+       <s:Body>
+          <GetAuthenticationChallengeResponse xmlns="http://www.altinn.no/services/Authentication/SystemAuthentication/2009/10">
+             <GetAuthenticationChallengeResult xmlns:a="http://schemas.altinn.no/services/Authentication/2009/10" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <a:Message>Benytt engangskode 2 fra brev datert torsdag, 17. desember 2015</a:Message>
+                <a:Status>Ok</a:Status>
+                <a:ValidFrom>2020-03-15T13:00:44.2353668+01:00</a:ValidFrom>
+                <a:ValidTo>2020-03-15T13:30:44.2353668+01:00</a:ValidTo>
+             </GetAuthenticationChallengeResult>
+          </GetAuthenticationChallengeResponse>
+       </s:Body>
+    </s:Envelope>
