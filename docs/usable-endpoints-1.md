@@ -1,7 +1,7 @@
 ---
 title: GetAuthenticationChallenge
 date: 2020-03-13
-slug: GetAuthenticationChallenge
+slug: get-authentication-challenge
 
 ---
 This is used to authenticate the user with Altinn. The users receive an SMS pin that is then used for subsequent request to other endpoints.
