@@ -59,3 +59,226 @@ languageID: We use 1033 for English. TODO: Find id for Norwegian is.
         </ns:GetReporteeElementListBasicV2>
       </soapenv:Body>
      </soapenv:Envelope>
+
+**Response Example**
+
+    <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+       <s:Body>
+          <GetReporteeElementListBasicV2Response xmlns="http://www.altinn.no/services/ServiceEngine/ReporteeElementList/2009/10">
+             <GetReporteeElementListBasicV2Result xmlns:a="http://www.altinn.no/services/ServiceEngine/ReporteeElementList/2010/10" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <a:ReporteeElementBEV2>
+                   <a:AllowDelete>true</a:AllowDelete>
+                   <a:AllowNewCopy>true</a:AllowNewCopy>
+                   <a:Altinn1ArchiveUnitId i:nil="true"/>
+                   <a:Altinn1FormCode i:nil="true"/>
+                   <a:Altinn1FormId i:nil="true"/>
+                   <a:Altinn1FormInstanceID i:nil="true"/>
+                   <a:Altinn1FormORNo i:nil="true"/>
+                   <a:Altinn1ParticipantID i:nil="true"/>
+                   <a:Altinn1ReferenceType i:nil="true"/>
+                   <a:Altinn1WorkflowProcessId i:nil="true"/>
+                   <a:ArchiveId i:nil="true"/>
+                   <a:ArchiveReference i:nil="true"/>
+                   <a:CaseID>0</a:CaseID>
+                   <a:CorrespondenceStatus>Default</a:CorrespondenceStatus>
+                   <a:DueDate i:nil="true"/>
+                   <a:EndUserSystemID>0</a:EndUserSystemID>
+                   <a:ExternalServiceCode>3349</a:ExternalServiceCode>
+                   <a:IsCaseArchived>false</a:IsCaseArchived>
+                   <a:IsMatched>false</a:IsMatched>
+                   <a:LastChangeType>Default</a:LastChangeType>
+                   <a:LastChangedBy>HAUK OLAUSSEN</a:LastChangedBy>
+                   <a:LastChangedByID>62689</a:LastChangedByID>
+                   <a:LastChangedDate>2020-03-15T15:23:17.43</a:LastChangedDate>
+                   <a:Notice i:nil="true"/>
+                   <a:ParentCaseName i:nil="true"/>
+                   <a:ReporteeElementId>7992038</a:ReporteeElementId>
+                   <a:ReporteeElementOwner>50111027</a:ReporteeElementOwner>
+                   <a:ReporteeElementType>FormTask</a:ReporteeElementType>
+                   <a:ReporteeName>30014500525 HAUK OLAUSSEN</a:ReporteeName>
+                   <a:RoleRequirement>ReadAndPerformNextStep</a:RoleRequirement>
+                   <a:RoleRequirementAltinn1Element i:nil="true"/>
+                   <a:SEReporteeElementID>0</a:SEReporteeElementID>
+                   <a:ServiceEditionVersion>164393</a:ServiceEditionVersion>
+                   <a:ServiceOwner>34</a:ServiceOwner>
+                   <a:ServiceOwnerCode>SKD</a:ServiceOwnerCode>
+                   <a:ServiceOwnerDescription i:nil="true"/>
+                   <a:Status>FillIn</a:Status>
+                   <a:StatusName>Completion</a:StatusName>
+                   <a:TaskStatus>Default</a:TaskStatus>
+                   <a:Title>RF-1030 Tax return for wealth and income tax - self-employed individuals 2018</a:Title>
+                </a:ReporteeElementBEV2>
+                <a:ReporteeElementBEV2>
+                   <a:AllowDelete>true</a:AllowDelete>
+                   <a:AllowNewCopy>true</a:AllowNewCopy>
+                   <a:Altinn1ArchiveUnitId i:nil="true"/>
+                   <a:Altinn1FormCode i:nil="true"/>
+                   <a:Altinn1FormId i:nil="true"/>
+                   <a:Altinn1FormInstanceID i:nil="true"/>
+                   <a:Altinn1FormORNo i:nil="true"/>
+                   <a:Altinn1ParticipantID i:nil="true"/>
+                   <a:Altinn1ReferenceType i:nil="true"/>
+                   <a:Altinn1WorkflowProcessId i:nil="true"/>
+                   <a:ArchiveId i:nil="true"/>
+                   <a:ArchiveReference i:nil="true"/>
+                   <a:CaseID>0</a:CaseID>
+                   <a:CorrespondenceStatus>Default</a:CorrespondenceStatus>
+                   <a:DueDate i:nil="true"/>
+                   <a:EndUserSystemID>0</a:EndUserSystemID>
+                   <a:ExternalServiceCode>3349</a:ExternalServiceCode>
+                   <a:IsCaseArchived>false</a:IsCaseArchived>
+                   <a:IsMatched>false</a:IsMatched>
+                   <a:LastChangeType>Default</a:LastChangeType>
+                   <a:LastChangedBy>HAUK OLAUSSEN</a:LastChangedBy>
+                   <a:LastChangedByID>62689</a:LastChangedByID>
+                   <a:LastChangedDate>2019-05-12T11:17:53.36</a:LastChangedDate>
+                   <a:Notice i:nil="true"/>
+                   <a:ParentCaseName i:nil="true"/>
+                   <a:ReporteeElementId>7012694</a:ReporteeElementId>
+                   <a:ReporteeElementOwner>50111027</a:ReporteeElementOwner>
+                   <a:ReporteeElementType>FormTask</a:ReporteeElementType>
+                   <a:ReporteeName>30014500525 HAUK OLAUSSEN</a:ReporteeName>
+                   <a:RoleRequirement>ReadAndPerformNextStep</a:RoleRequirement>
+                   <a:RoleRequirementAltinn1Element i:nil="true"/>
+                   <a:SEReporteeElementID>0</a:SEReporteeElementID>
+                   <a:ServiceEditionVersion>142270</a:ServiceEditionVersion>
+                   <a:ServiceOwner>34</a:ServiceOwner>
+                   <a:ServiceOwnerCode>SKD</a:ServiceOwnerCode>
+                   <a:ServiceOwnerDescription i:nil="true"/>
+                   <a:Status>FillIn</a:Status>
+                   <a:StatusName>Completion</a:StatusName>
+                   <a:TaskStatus>Default</a:TaskStatus>
+                   <a:Title>RF-1030 Tax return for wealth and income tax - self-employed individuals 2017</a:Title>
+                </a:ReporteeElementBEV2>
+                <a:ReporteeElementBEV2>
+                   <a:AllowDelete>true</a:AllowDelete>
+                   <a:AllowNewCopy>true</a:AllowNewCopy>
+                   <a:Altinn1ArchiveUnitId i:nil="true"/>
+                   <a:Altinn1FormCode i:nil="true"/>
+                   <a:Altinn1FormId i:nil="true"/>
+                   <a:Altinn1FormInstanceID i:nil="true"/>
+                   <a:Altinn1FormORNo i:nil="true"/>
+                   <a:Altinn1ParticipantID i:nil="true"/>
+                   <a:Altinn1ReferenceType i:nil="true"/>
+                   <a:Altinn1WorkflowProcessId i:nil="true"/>
+                   <a:ArchiveId i:nil="true"/>
+                   <a:ArchiveReference i:nil="true"/>
+                   <a:CaseID>0</a:CaseID>
+                   <a:CorrespondenceStatus>Default</a:CorrespondenceStatus>
+                   <a:DueDate i:nil="true"/>
+                   <a:EndUserSystemID>0</a:EndUserSystemID>
+                   <a:ExternalServiceCode>3349</a:ExternalServiceCode>
+                   <a:IsCaseArchived>false</a:IsCaseArchived>
+                   <a:IsMatched>false</a:IsMatched>
+                   <a:LastChangeType>Default</a:LastChangeType>
+                   <a:LastChangedBy>HAUK OLAUSSEN</a:LastChangedBy>
+                   <a:LastChangedByID>62689</a:LastChangedByID>
+                   <a:LastChangedDate>2020-03-15T13:06:47.233</a:LastChangedDate>
+                   <a:Notice i:nil="true"/>
+                   <a:ParentCaseName i:nil="true"/>
+                   <a:ReporteeElementId>8651544</a:ReporteeElementId>
+                   <a:ReporteeElementOwner>50111027</a:ReporteeElementOwner>
+                   <a:ReporteeElementType>FormTask</a:ReporteeElementType>
+                   <a:ReporteeName>30014500525 HAUK OLAUSSEN</a:ReporteeName>
+                   <a:RoleRequirement>ReadAndPerformNextStep</a:RoleRequirement>
+                   <a:RoleRequirementAltinn1Element i:nil="true"/>
+                   <a:SEReporteeElementID>0</a:SEReporteeElementID>
+                   <a:ServiceEditionVersion>180143</a:ServiceEditionVersion>
+                   <a:ServiceOwner>34</a:ServiceOwner>
+                   <a:ServiceOwnerCode>SKD</a:ServiceOwnerCode>
+                   <a:ServiceOwnerDescription i:nil="true"/>
+                   <a:Status>FillIn</a:Status>
+                   <a:StatusName>Completion</a:StatusName>
+                   <a:TaskStatus>Default</a:TaskStatus>
+                   <a:Title>RF-1030 Tax return for wealth and income tax - self-employed individuals 2019</a:Title>
+                </a:ReporteeElementBEV2>
+                <a:ReporteeElementBEV2>
+                   <a:AllowDelete>true</a:AllowDelete>
+                   <a:AllowNewCopy>true</a:AllowNewCopy>
+                   <a:Altinn1ArchiveUnitId i:nil="true"/>
+                   <a:Altinn1FormCode i:nil="true"/>
+                   <a:Altinn1FormId i:nil="true"/>
+                   <a:Altinn1FormInstanceID i:nil="true"/>
+                   <a:Altinn1FormORNo i:nil="true"/>
+                   <a:Altinn1ParticipantID i:nil="true"/>
+                   <a:Altinn1ReferenceType i:nil="true"/>
+                   <a:Altinn1WorkflowProcessId i:nil="true"/>
+                   <a:ArchiveId>5276128</a:ArchiveId>
+                   <a:ArchiveReference>AR5276128</a:ArchiveReference>
+                   <a:CaseID>0</a:CaseID>
+                   <a:CorrespondenceStatus>Default</a:CorrespondenceStatus>
+                   <a:DueDate i:nil="true"/>
+                   <a:EndUserSystemID>0</a:EndUserSystemID>
+                   <a:ExternalServiceCode>3349</a:ExternalServiceCode>
+                   <a:IsCaseArchived>false</a:IsCaseArchived>
+                   <a:IsMatched>false</a:IsMatched>
+                   <a:LastChangeType>Default</a:LastChangeType>
+                   <a:LastChangedBy>Norwegian Tax Administration</a:LastChangedBy>
+                   <a:LastChangedByID>0</a:LastChangedByID>
+                   <a:LastChangedDate>2019-01-20T20:02:03.227</a:LastChangedDate>
+                   <a:Notice i:nil="true"/>
+                   <a:ParentCaseName i:nil="true"/>
+                   <a:ReporteeElementId>0</a:ReporteeElementId>
+                   <a:ReporteeElementOwner>50111027</a:ReporteeElementOwner>
+                   <a:ReporteeElementType>FormTask</a:ReporteeElementType>
+                   <a:ReporteeName>30014500525 HAUK OLAUSSEN</a:ReporteeName>
+                   <a:RoleRequirement>Default</a:RoleRequirement>
+                   <a:RoleRequirementAltinn1Element i:nil="true"/>
+                   <a:SEReporteeElementID>7012668</a:SEReporteeElementID>
+                   <a:ServiceEditionVersion>142270</a:ServiceEditionVersion>
+                   <a:ServiceOwner>34</a:ServiceOwner>
+                   <a:ServiceOwnerCode>SKD</a:ServiceOwnerCode>
+                   <a:ServiceOwnerDescription i:nil="true"/>
+                   <a:Status>Archive</a:Status>
+                   <a:StatusName>Sent and archived</a:StatusName>
+                   <a:TaskStatus>Default</a:TaskStatus>
+                   <a:Title>RF-1030 Tax return for wealth and income tax - self-employed individuals 2017</a:Title>
+                </a:ReporteeElementBEV2>
+                <a:ReporteeElementBEV2>
+                   <a:AllowDelete>true</a:AllowDelete>
+                   <a:AllowNewCopy>true</a:AllowNewCopy>
+                   <a:Altinn1ArchiveUnitId i:nil="true"/>
+                   <a:Altinn1FormCode i:nil="true"/>
+                   <a:Altinn1FormId i:nil="true"/>
+                   <a:Altinn1FormInstanceID i:nil="true"/>
+                   <a:Altinn1FormORNo i:nil="true"/>
+                   <a:Altinn1ParticipantID i:nil="true"/>
+                   <a:Altinn1ReferenceType i:nil="true"/>
+                   <a:Altinn1WorkflowProcessId i:nil="true"/>
+                   <a:ArchiveId>5276126</a:ArchiveId>
+                   <a:ArchiveReference>AR5276126</a:ArchiveReference>
+                   <a:CaseID>0</a:CaseID>
+                   <a:CorrespondenceStatus>Default</a:CorrespondenceStatus>
+                   <a:DueDate i:nil="true"/>
+                   <a:EndUserSystemID>0</a:EndUserSystemID>
+                   <a:ExternalServiceCode>3349</a:ExternalServiceCode>
+                   <a:IsCaseArchived>false</a:IsCaseArchived>
+                   <a:IsMatched>false</a:IsMatched>
+                   <a:LastChangeType>Default</a:LastChangeType>
+                   <a:LastChangedBy>Norwegian Tax Administration</a:LastChangedBy>
+                   <a:LastChangedByID>0</a:LastChangedByID>
+                   <a:LastChangedDate>2019-01-20T20:01:43.197</a:LastChangedDate>
+                   <a:Notice i:nil="true"/>
+                   <a:ParentCaseName i:nil="true"/>
+                   <a:ReporteeElementId>0</a:ReporteeElementId>
+                   <a:ReporteeElementOwner>50111027</a:ReporteeElementOwner>
+                   <a:ReporteeElementType>FormTask</a:ReporteeElementType>
+                   <a:ReporteeName>30014500525 HAUK OLAUSSEN</a:ReporteeName>
+                   <a:RoleRequirement>Default</a:RoleRequirement>
+                   <a:RoleRequirementAltinn1Element i:nil="true"/>
+                   <a:SEReporteeElementID>7012690</a:SEReporteeElementID>
+                   <a:ServiceEditionVersion>142270</a:ServiceEditionVersion>
+                   <a:ServiceOwner>34</a:ServiceOwner>
+                   <a:ServiceOwnerCode>SKD</a:ServiceOwnerCode>
+                   <a:ServiceOwnerDescription i:nil="true"/>
+                   <a:Status>Archive</a:Status>
+                   <a:StatusName>Sent and archived</a:StatusName>
+                   <a:TaskStatus>Default</a:TaskStatus>
+                   <a:Title>RF-1030 Tax return for wealth and income tax - self-employed individuals 2017</a:Title>
+                </a:ReporteeElementBEV2>
+             </GetReporteeElementListBasicV2Result>
+          </GetReporteeElementListBasicV2Response>
+       </s:Body>
+    </s:Envelope>
+
+dfdfdf
