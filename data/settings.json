@@ -1,15 +1,6 @@
 {
   "sidebar": [
     {
-      "section": "Docs",
-      "topics": [
-        {
-          "title": "Endpoints",
-          "slug": "end-points"
-        }
-      ]
-    },
-    {
       "section": "Introduction",
       "topics": [
         {
@@ -36,6 +27,15 @@
         {
           "title": "Forestry CMS",
           "slug": "forestry-cms"
+        }
+      ]
+    },
+    {
+      "section": "Docs",
+      "topics": [
+        {
+          "title": "Endpoints",
+          "slug": "end-points"
         }
       ]
     }
