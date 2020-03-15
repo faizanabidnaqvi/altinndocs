@@ -1,0 +1,90 @@
+---
+title: forms-2020
+date: 2020-03-13
+slug: forms-2020
+
+---
+Here we document ONLY the latest forms and form information available for the year 2020. Note that the year is 2020 but the forms to be submitted will be 2019.
+
+Additionally, we are also allowed to submit for 2019 (which will be 2018 forms) for users who are late. But this section only documents for 2019. 2018 forms are documented under the 'Form Information' 2019 section.
+
+## **Available Services**
+
+The output here is a subset of the output obtained from the GetAvailableServicesBasicV3 endpoint. The subset refers to only the forms we need.
+
+**Summary**
+
+To find a particular form in GetReporteeElement end point based on the current year, we only need to use ExternalServiceCode and ServiceEditionVersionId (which is referred to as ServiceEditionVersion in xml output for GetReporteeElement)
+
+**RF-1030 Skattemelding for formues- og inntektsskatt – lønnstakere og pensjonister mv. 2019 (for wage earners and pension earners)**
+
+ExternalServiceCode: 3348  
+ExternalServiceEditionCode: 2019  
+ServiceEditionVersionId: 180141 (Note: In GetReporteeElement forms this corresponds to a:ServiceEditionVersion)
+
+**RF-1030 Skattemelding for formues- og inntektsskatt – personlig næringsdrivende mv. 2019 (for business owners)**
+
+ExternalServiceCode: 3349  
+ExternalServiceEditionCode: 2019  
+ServiceEditionVersionId: 180143 (Note: In GetReporteeElement forms this corresponds to a:ServiceEditionVersion)
+
+**Raw Output**
+
+**RF-1030 Skattemelding for formues- og inntektsskatt – lønnstakere og pensjonister mv. 2019 (for wage earners and pension earners)**
+
+    <a:AvailableServiceBEV3>
+       <a:AttachmentRuleTypeList i:nil="true"/>
+       <a:BuildPackageVersion>41</a:BuildPackageVersion>
+       <a:ExternalServiceCode>3348</a:ExternalServiceCode>
+       <a:ExternalServiceEditionCode>2019</a:ExternalServiceEditionCode>
+       <a:IsMatched>false</a:IsMatched>
+       <a:ServiceEditionVersionId>180141</a:ServiceEditionVersionId>
+       <a:ServiceEditionVersionName>RF-1030 Skattemelding for formues- og inntektsskatt – lønnstakere og pensjonister mv. 2019</a:ServiceEditionVersionName>
+       <a:ServiceName>RF-1030PSA</a:ServiceName>
+       <a:ServiceOwnerCode>SKD</a:ServiceOwnerCode>
+       <a:ServiceOwnerName>Norwegian Tax Administration</a:ServiceOwnerName>
+       <a:ServiceType>Reporting</a:ServiceType>
+       <a:ValidFrom>2020-02-03T21:21:00</a:ValidFrom>
+       <a:ValidTo>2021-02-01T23:59:00</a:ValidTo>
+      </a:AvailableServiceBEV3>
+
+**RF-1030 Skattemelding for formues- og inntektsskatt – personlig næringsdrivende mv. 2019 (for business owners)**
+
+    <a:AvailableServiceBEV3>
+       <a:AttachmentRuleTypeList i:nil="true"/>
+       <a:BuildPackageVersion>40</a:BuildPackageVersion>
+       <a:ExternalServiceCode>3349</a:ExternalServiceCode>
+       <a:ExternalServiceEditionCode>2019</a:ExternalServiceEditionCode>
+       <a:IsMatched>false</a:IsMatched>
+       <a:ServiceEditionVersionId>180143</a:ServiceEditionVersionId>
+       <a:ServiceEditionVersionName>RF-1030 Skattemelding for formues- og inntektsskatt – personlig næringsdrivende mv. 2019</a:ServiceEditionVersionName>
+       <a:ServiceName>RF-1030PSAN</a:ServiceName>
+       <a:ServiceOwnerCode>SKD</a:ServiceOwnerCode>
+       <a:ServiceOwnerName>Norwegian Tax Administration</a:ServiceOwnerName>
+       <a:ServiceType>Reporting</a:ServiceType>
+       <a:ValidFrom>2020-02-03T21:33:00</a:ValidFrom>
+       <a:ValidTo>2021-02-01T23:59:00</a:ValidTo>
+    </a:AvailableServiceBEV3>
+
+## Form Schema (RF-1189)
+
+The output here is a subset of the output available from the GetFormTaskSchemaDefinition in relation to RF-1189. This was found by finding the text 'RF-1189' in the xml output as it is a lot.
+
+**Summary**
+
+When we submit the RF-1189 form, we need the DataFormatID and DataFormatVersion for the form for the input. The DataFormatVersion can change every year (DataFormatID might as well but it didn't happen for 2020).
+
+DataFormatID: 738  
+DataFormatVersion: 12292
+
+**Raw Schema (only for RF-1189) with Xsd omitted. The Xsd is long so it is saved seperately.**
+
+    <a:LogicalFormSchemaDefinition>
+                   <a:DataFormatID>738</a:DataFormatID>
+                   <a:DataFormatProviderTypeID>1</a:DataFormatProviderTypeID>
+                   <a:DataFormatVersion>12292</a:DataFormatVersion>
+                   <a:DataFormatXsd><![CDATA[..xsd..]]></a:DataFormatXsd>
+                   <a:LogicalFormID>280698</a:LogicalFormID>
+    </a:LogicalFormSchemaDefinition>
+
+end
