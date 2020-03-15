@@ -13,10 +13,6 @@
       "section": "Endpoints in use",
       "topics": [
         {
-          "title": "how-to-setup-schema",
-          "slug": "how-to-setup-schema"
-        },
-        {
           "title": "GetAuthenticationChallenge",
           "slug": "get-authentication-challenge"
         },
