@@ -56,4 +56,4 @@ languageID: We use 1033 for English. TODO: Find id for Norwegian is.
           <ns:languageID>1033</ns:languageID>
         </ns:GetReporteeElementListBasicV2>
       </soapenv:Body>
-    </soapenv:Envelope>
+     </soapenv:Envelope>
