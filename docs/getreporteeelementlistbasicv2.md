@@ -8,6 +8,8 @@ This endpoint is used to find all the forms in the system.  In our scenario, we 
 
 Before sending this request, we need to find out the systemUserName and systemPassword from the user. This is set by the user in Altinn settings to let external systems access their profile.
 
+**Inputs**
+
 systemUserName: System user name set by the users in their settings for external access
 
 systemPassword: System password set by the users in their settings for external access
