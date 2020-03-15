@@ -13,12 +13,12 @@
       "section": "Endpoints in use",
       "topics": [
         {
-          "title": "GetReporteeElementListBasicV2",
-          "slug": "GetReporteeElementListBasicV2"
-        },
-        {
           "title": "GetAuthenticationChallenge",
           "slug": "GetAuthenticationChallenge"
+        },
+        {
+          "title": "GetReporteeElementListBasicV2",
+          "slug": "GetReporteeElementListBasicV2"
         }
       ]
     },
