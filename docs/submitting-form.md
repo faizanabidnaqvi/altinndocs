@@ -21,3 +21,5 @@ Each year, say 2020, requires the form from the previous year to be submitted. B
 For example, in 2020 the application RF-1030 form will be for 2019 (current year submission) and 2018 (previous year)
 
 ## Authenticate the user
+
+Use the 
