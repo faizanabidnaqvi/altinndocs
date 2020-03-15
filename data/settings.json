@@ -13,6 +13,10 @@
       "section": "Setup",
       "topics": [
         {
+          "title": "How to setup schema",
+          "slug": "how-to-setup-schema"
+        },
+        {
           "title": "Theme configuration",
           "slug": "theme-configuration"
         },
