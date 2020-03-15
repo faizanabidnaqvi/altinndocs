@@ -1,15 +1,11 @@
 {
   "sidebar": [
     {
-      "section": "RF-1189 Schema",
+      "section": "Introduction",
       "topics": [
         {
-          "title": "RF-1189 Schema 2020",
-          "slug": "rf-1189-schema-2020"
-        },
-        {
-          "title": "RF-1189 Schema 2019",
-          "slug": "rf-1189-schema-2020"
+          "title": "Submit form",
+          "slug": "submit-form"
         }
       ]
     },
@@ -17,21 +13,12 @@
       "section": "Forms",
       "topics": [
         {
-          "title": "2020",
+          "title": "Forms 2020",
           "slug": "forms-2020"
         },
         {
-          "title": "2019",
+          "title": "Forms 2019",
           "slug": "forms-2019"
-        }
-      ]
-    },
-    {
-      "section": "Introduction",
-      "topics": [
-        {
-          "title": "Submit form",
-          "slug": "submit-form"
         }
       ]
     },
@@ -45,6 +32,23 @@
         {
           "title": "GetReporteeElementListBasicV2",
           "slug": "get-reportee-element-list"
+        },
+        {
+          "title": "GetAvailableServicesBasicV3",
+          "slug": "get-available-services"
+        }
+      ]
+    },
+    {
+      "section": "RF-1189 Schema",
+      "topics": [
+        {
+          "title": "RF-1189 Schema 2020",
+          "slug": "rf-1189-schema-2020"
+        },
+        {
+          "title": "RF-1189 Schema 2019",
+          "slug": "rf-1189-schema-2020"
         }
       ]
     },
