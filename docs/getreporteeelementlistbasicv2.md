@@ -1,7 +1,7 @@
 ---
 title: GetReporteeElementListBasicV2
 date: 2020-03-13
-slug: GetReporteeElementListBasicV2
+slug: get-reportee-element-list
 
 ---
 This endpoint is used to find all the forms in the system.  In our scenario, we will use to find the RF-1030 form we wish to attach RF-1189 to. They can be filtered based on criteria as well.
@@ -59,6 +59,20 @@ languageID: We use 1033 for English. TODO: Find id for Norwegian is.
         </ns:GetReporteeElementListBasicV2>
       </soapenv:Body>
      </soapenv:Envelope>
+
+**Output**
+
+The return will consist of all the forms whether archives or filled during the period specified in the search. For the app, we are only concerned with RF-1030 forms. _Look at the type of forms in the docs_. Below, we only document output field we might be concerned with.
+
+ExternalServiceCode: This is the service code of the form. Each form type has a service code. For RF-1030, we are concerned with codes 3348 and 3349 which refer to both possible versions of RF-1030.
+
+LastChangedDate: Last date this form was updated.
+
+ReporteeElementId: The unique form ID. THIS IS WHAT WE NEED to find which form we need to attach RF-1189 to.
+
+Status: The status of the form. There are two, FillIn and Archive. Work in progress forms that we need are always FillIn.
+
+StatusName: The current status name of the form. The 'Completion' state refers to work in progress forms; this is the only state of form we need to attach RF-1189 to later. The other state is 'Sent and archived' which is for archived forms.
 
 **Response Example**
 
@@ -281,4 +295,4 @@ languageID: We use 1033 for English. TODO: Find id for Norwegian is.
        </s:Body>
     </s:Envelope>
 
-dfdfdf
+end
