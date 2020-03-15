@@ -1,6 +1,15 @@
 {
   "sidebar": [
     {
+      "section": "Endpoints in use",
+      "topics": [
+        {
+          "title": "GetAuthenticationChallenge",
+          "slug": "GetAuthenticationChallenge"
+        }
+      ]
+    },
+    {
       "section": "Introduction",
       "topics": [
         {
