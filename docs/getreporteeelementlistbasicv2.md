@@ -28,7 +28,7 @@ Reportee: A user may have multiple accounts in Altinn. And therefore the Reporte
 
 ToDate: End date for the search. The format is: 2020-03-16
 
-Langauge,
+Language,
 
 languageID: We use 1033 for English. TODO: Find id for Norwegian is.
 
