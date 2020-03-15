@@ -1,6 +1,15 @@
 {
   "sidebar": [
     {
+      "section": "Docs",
+      "topics": [
+        {
+          "title": "Endpoints",
+          "slug": "end-points"
+        }
+      ]
+    },
+    {
       "section": "Introduction",
       "topics": [
         {
