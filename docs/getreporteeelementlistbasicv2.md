@@ -4,7 +4,7 @@ date: 2020-03-13
 slug: get-reportee-element-list
 
 ---
-This endpoint is used to find all the forms in the system.  In our scenario, we will use to find the RF-1030 form we wish to attach RF-1189 to. They can be filtered based on criteria as well.
+This endpoint is used to find all the forms in the system.  In our scenario, we will use it to find the RF-1030 form id (ReporteeElementId) we wish to attach RF-1189 to. They can be filtered based on criteria as well.
 
 Before sending this request, we need to find out the systemUserName and systemPassword from the user. This is set by the user in Altinn settings to let external systems access their profile.
 
