@@ -51,6 +51,10 @@
       "section": "RF-1189 Schema",
       "topics": [
         {
+          "title": "RF-1189 Examples",
+          "slug": "rf-1189-examples"
+        },
+        {
           "title": "RF-1189 Schema 2020",
           "slug": "rf-1189-schema-2020"
         },
