@@ -39,7 +39,13 @@ UserPassword: The password used for MINID. Similar to SSN, this should NEVER be 
        </soapenv:Body>
     </soapenv:Envelope>
 
-This will result in sending an SMS to the user which is valid for 20 mins (recheck) of inactivity. The SMS will be used for all subsequent authentication for the user. This needs to be rechecked whether it is an SMS or some other kind of Pin for AltinnPin
+This will result indicating which PIN code (from date of letter) the user to use. This PIN code is through a letter sent to the user. In such letter, users usually have multiple pins and therefore the response is something like:
+
+> Benytt engangskode 8 fra brev datert torsdag, 17. desember 2015
+
+We might not use this method in production.
+
+Each authentication is only valid for 30 mins of inactivity.
 
 **Response Example:**
 
@@ -58,7 +64,7 @@ This will result in sending an SMS to the user which is valid for 20 mins (reche
 
 #### SMSPin
 
-This seems to be the correct method to use to send an SMS to the user which we can. AltinnPin above seems to be a pin code retrieved through other means we are not sure of (this is most likely a letter).
+This seems to be the correct method to use to send an SMS to the user which we can use. AltinnPin above seems to be a pin code retrieved through a letter.
 
 If no phone number is found, we get an error.
 
