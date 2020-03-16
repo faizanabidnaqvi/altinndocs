@@ -33,5 +33,18 @@ Use the [GetAuthenticationChallenge](/get-authentication-challenge) end point to
 
 ## Find the ReporteeElementID
 
-1. 
-2. Use the [GetReporteeElementListBasicV2](/get-reportee-element-list) end point to
+1. Get the systemUserName, systemPassword, userSSN, userPassword and userPinCode (SMS pin) from users. The UserSSN and userPassword were obtained in the previous steps. We may save this temporarily in the server (till the time we are processing) but need to recheck if we need to delete this.
+2. Find the tax year they wish to submit the form for. This will determine what year range to look for in Get Reportee Element endpoint.
+3. Use the [GetReporteeElementListBasicV2](/get-reportee-element-list) end point to send a request with the above parameters
+4. Check the response and make sure we have atleast one ReporteeElementBEV2
+5. Look for the form id (a:ReporteeElementId) with the fields  
+   ExternalServiceCode: 3348 or 3349 (Based on the type of RF-1030 form. We can look for either ones for now)  
+   ServiceEditionVersion: 180141 or 180143 for 2019; 164387 or 164393 for 2018  
+   Status: FillIn
+6. Save the found ReporteeElementId for use in the next steps. Will also need the info from step 1
+
+## Generate the RF-1189 form
+
+dfdf
+
+## Submit
