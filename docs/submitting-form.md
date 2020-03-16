@@ -45,6 +45,14 @@ Use the [GetAuthenticationChallenge](/get-authentication-challenge) end point to
 
 ## Generate the RF-1189 form
 
-dfdf
-
 ## Submit
+
+1. Get the systemUserName, systemPassword, userSSN, userPassword and userPinCode (SMS pin) from users. The UserSSN and userPassword were obtained in the previous steps. We may save this temporarily in the server (till the time we are processing) but need to recheck if we need to delete this.
+2. Based on the UpdateFormDataBasic endpoint template and the user's selected form, fill in the DataFormatId, DataFormatVersion and ReporteeElementId. Note that the DataFormatVersion has to also be filled in the generated form's xml attribute spesifikasjonsnummer as well or we'll get an error.
+3. Add the generated form in FormData xml field
+4. Submit the envelope
+5. Check the response status code under UpdateFormDataBasicResult->ReceiptStatusCode. It must be OK to indicate success. If it failed the ReceiptStatusCode will be 'Rejected'
+
+Notes:
+
+* It take a while (up to 2-5 mins) for the form to appear in Altinn
