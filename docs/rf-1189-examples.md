@@ -4,13 +4,13 @@ date: 2020-03-14
 slug: rf-1189-examples
 
 ---
-Here we show populated XML based on the RF-1189 XSD template.
+Here we show populated XML based on the RF-1189 XSD template. Both of the following apply to 2019 and 2018 tax year.
 
 ## Empty Form
 
 An empty form (note that skjemanummer is set to the DataFormatVersion). Using this will show an entirely empty form.
 
-This example is for a 2019 form.
+This example is for a 2019 and 2018 form.
 
     <Skjema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" skjemanummer="738" spesifikasjonsnummer="12292" blankettnummer="RF-1189" tittel="Årsoppgjør for utleie av fast eiendom" gruppeid="230" etatid="NoAgency" xsi:noNamespaceSchemaLocation="schema%20(1).xsd">
     <GenerellInformasjon-grp-959 gruppeid="959">
