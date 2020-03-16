@@ -8,13 +8,13 @@ This is used to authenticate the user with Altinn. The users receive an SMS pin 
 
 ### Authentication Methods
 
-When users login through Altinn they get to choose from several possible types of login as shown below: 
+When users login through Altinn they get to choose from several possible types of login as shown below:
 
 ![](/Screenshot 2020-03-15 at 7.47.16 PM.png)
 
 When authenticating through SOAP we need to specify the method. Methods correspond to one of the above.
 
-#### AltinnPin
+#### AltinnPin (TODO: Recheck if this really is MINID)
 
 This corresponds to the "MINIID" type in the authentication portal. The inputs are:
 
@@ -37,9 +37,9 @@ UserPassword: The password used for MINID. Similar to SSN, this should NEVER be 
        </soapenv:Body>
     </soapenv:Envelope>
 
-This will result in sending an SMS to the user which is valid for 20 mins (recheck) of inactivity. The SMS will be used for all subsequent authentication for the user.
+This will result in sending an SMS to the user which is valid for 20 mins (recheck) of inactivity. The SMS will be used for all subsequent authentication for the user. This needs to be rechecked whether it is an SMS or some other kind of Pin for AltinnPin
 
-Response Example:
+**Response Example:**
 
     <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
        <s:Body>
@@ -53,3 +53,24 @@ Response Example:
           </GetAuthenticationChallengeResponse>
        </s:Body>
     </s:Envelope>
+
+#### SMSPin
+
+This seems to be the correct method to use to send an SMS to the user which we can. AltinnPin above seems to be a pin code retrieved through other means we are not sure of (this is most likely a letter).
+
+If no phone number is found, we get an error.
+
+    <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+       <s:Body>
+          <GetAuthenticationChallengeResponse xmlns="http://www.altinn.no/services/Authentication/SystemAuthentication/2009/10">
+             <GetAuthenticationChallengeResult xmlns:a="http://schemas.altinn.no/services/Authentication/2009/10" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <a:Message>Mobilnummer er ikke registrert på bruker. Registrer mobilnummer i Min profil på altinn.no</a:Message>
+                <a:Status>NoPhoneNumber</a:Status>
+                <a:ValidFrom>0001-01-01T00:00:00</a:ValidFrom>
+                <a:ValidTo>0001-01-01T00:00:00</a:ValidTo>
+             </GetAuthenticationChallengeResult>
+          </GetAuthenticationChallengeResponse>
+       </s:Body>
+    </s:Envelope>
+
+end
