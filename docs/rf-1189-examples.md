@@ -115,9 +115,9 @@ This example is for a 2019 and 2018 form.
     </Kontrollsporsmal-grp-239>
     </Skjema>
 
-Filled Form with comments
+Filled Form
 
-This form is filled for a property and set to 12292 (based on 2019 tax year RF-1189)
+This form is filled for a property and set to 12292 (based on 2019 tax year RF-1189) with comments to explain each field.
 
     <?xml version="1.0" encoding="UTF-8"?>
     <Skjema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" skjemanummer="738" spesifikasjonsnummer="12292" blankettnummer="RF-1189" tittel="Årsoppgjør for utleie av fast eiendom" gruppeid="230" etatid="NoAgency" xsi:noNamespaceSchemaLocation="schema%20(1).xsd">
