@@ -34,6 +34,10 @@
           "slug": "get-reportee-element-list"
         },
         {
+          "title": "UpdateFormDataBasic",
+          "slug": "update-form-data-basic"
+        },
+        {
           "title": "GetAvailableServicesBasicV3",
           "slug": "get-available-services"
         },
