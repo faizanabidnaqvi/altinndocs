@@ -12,9 +12,11 @@ When users login through Altinn they get to choose from several possible types o
 
 ![](/Screenshot 2020-03-15 at 7.47.16 PM.png)
 
-When authenticating through SOAP we need to specify the method. Methods correspond to one of the above.
+When authenticating through SOAP we need to specify the method. Altinn only supports authentication through MINID. Both AltinnPin and SMSPin refer to the MINID. 
 
-#### AltinnPin (TODO: Recheck if this really is MINID)
+In production, we will be using SMSPin so users get the pin through SMS. However, we _might_ give them an option to use a physical pin if they ordered so which will then use AltinnPin. This method needs to be investigated for production scenario.
+
+#### AltinnPin 
 
 This corresponds to the "MINIID" type in the authentication portal. The inputs are:
 
