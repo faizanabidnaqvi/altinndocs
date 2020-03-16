@@ -64,7 +64,7 @@ Each authentication is only valid for 30 mins of inactivity.
 
 #### SMSPin
 
-This seems to be the correct method to use to send an SMS to the user which we can use. AltinnPin above seems to be a pin code retrieved through a letter.
+This seems to be the correct method to use to send an SMS to the user which we can use. AltinnPin above seems to be a pin code retrieved through a letter. All parameters are same except for AuthMethod which will be set to SMSPin
 
 If no phone number is found, we get an error.
 
