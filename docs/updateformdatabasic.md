@@ -153,6 +153,143 @@ Remember to ensure DataFormatVersion is also set for the attribute spesifikasjon
           </ns:UpdateFormDataBasic>
        </soapenv:Body>
     </soapenv:Envelope>
+
+**Response Example (Success)**
+
+    <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+       <s:Body>
+          <UpdateFormDataBasicResponse xmlns="http://www.altinn.no/services/Intermediary/Shipment/IntermediaryInbound/2009/10">
+             <UpdateFormDataBasicResult xmlns:a="http://schemas.altinn.no/services/Intermediary/Receipt/2009/10" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <a:LastChanged>2020-03-16T03:02:03.903</a:LastChanged>
+                <a:ParentReceiptId>0</a:ParentReceiptId>
+                <a:ReceiptHistory>Mar 16 2020  1:46AM - OK - 1/1 forms updated. 0 forms failed validation.
+    Jan 10 2020  1:45PM - OK - 1/1 forms updated. 0 forms failed validation.
+    Jan 10 2020  1:44PM - OK - 0/1 forms updated. 1 forms failed validation.
+    Jan 10 2020  1:42PM - OK - 0/1 forms updated. 1 forms failed validation.</a:ReceiptHistory>
+                <a:ReceiptId>28362770</a:ReceiptId>
+                <a:ReceiptStatusCode>OK</a:ReceiptStatusCode>
+                <a:ReceiptText>1/1 forms updated. 0 forms failed validation.</a:ReceiptText>
+                <a:ReceiptTypeName>FormTask</a:ReceiptTypeName>
+                <a:References>
+                   <a:Reference>
+                      <a:ReferenceTypeName>ExternalShipmentReference</a:ReferenceTypeName>
+                      <a:ReferenceValue>EXT_REF5157</a:ReferenceValue>
+                   </a:Reference>
+                   <a:Reference>
+                      <a:ReferenceTypeName>WorkFlowReference</a:ReferenceTypeName>
+                      <a:ReferenceValue>7992038</a:ReferenceValue>
+                   </a:Reference>
+                   <a:Reference>
+                      <a:ReferenceTypeName>OwnerPartyReference</a:ReferenceTypeName>
+                      <a:ReferenceValue>30014500525</a:ReferenceValue>
+                   </a:Reference>
+                </a:References>
+                <a:SubReceipts>
+                   <a:ReceiptExternal>
+                      <a:LastChanged>2020-03-16T03:02:03.903</a:LastChanged>
+                      <a:ParentReceiptId>28362770</a:ParentReceiptId>
+                      <a:ReceiptHistory>Mar 16 2020  1:46AM - OK - FormId 5739688 was successfully created/updated
+    Jan 10 2020  1:45PM - OK - FormId 5562298 was successfully created/updated
+    Jan 10 2020  1:44PM - ValidationFailed - Error: &lt;SchemaValidationError>The value of the 'spesifikasjonsnummer' attribute does not equal its fixed value.&lt;/SchemaValidationError> :  Error path: 
     
+    Jan 10 2020  1:42PM - ValidationFailed - Error: &lt;SchemaValidationError>The value of the 'spesifikasjonsnummer' attribute does not equal its fixed value.&lt;/SchemaValidationError> :  Error path:</a:ReceiptHistory>
+                      <a:ReceiptId>28362771</a:ReceiptId>
+                      <a:ReceiptStatusCode>OK</a:ReceiptStatusCode>
+                      <a:ReceiptText>FormId 5739781 was successfully created/updated</a:ReceiptText>
+                      <a:ReceiptTypeName>FormTask</a:ReceiptTypeName>
+                      <a:References>
+                         <a:Reference>
+                            <a:ReferenceTypeName>EndUserSystemReference</a:ReferenceTypeName>
+                            <a:ReferenceValue>1</a:ReferenceValue>
+                         </a:Reference>
+                      </a:References>
+                      <a:SubReceipts i:nil="true"/>
+                   </a:ReceiptExternal>
+                </a:SubReceipts>
+             </UpdateFormDataBasicResult>
+          </UpdateFormDataBasicResponse>
+       </s:Body>
+    </s:Envelope>
+
+**Response Example (Failed due to incorrect DataFormatID and DataFormatVersion)**
+
+    <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+       <s:Body>
+          <UpdateFormDataBasicResponse xmlns="http://www.altinn.no/services/Intermediary/Shipment/IntermediaryInbound/2009/10">
+             <UpdateFormDataBasicResult xmlns:a="http://schemas.altinn.no/services/Intermediary/Receipt/2009/10" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <a:LastChanged>0001-01-01T00:00:00</a:LastChanged>
+                <a:ParentReceiptId>0</a:ParentReceiptId>
+                <a:ReceiptHistory i:nil="true"/>
+                <a:ReceiptId>0</a:ReceiptId>
+                <a:ReceiptStatusCode>Rejected</a:ReceiptStatusCode>
+                <a:ReceiptText>Validation of the provided forms failed: Invalid DataFormatId and DataformatVersion for 1</a:ReceiptText>
+                <a:ReceiptTypeName>NotSet</a:ReceiptTypeName>
+                <a:References i:nil="true"/>
+                <a:SubReceipts i:nil="true"/>
+             </UpdateFormDataBasicResult>
+          </UpdateFormDataBasicResponse>
+       </s:Body>
+    </s:Envelope>
+
+**Response Example (Failed due to incorrect form xml, wrong spesifikasjonsnummer)**
+
+Note that StatusCode is OK in the main section but says ValidationFailed for ReceiptStatusCode under ReceiptExternal
+
+    <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+       <s:Body>
+          <UpdateFormDataBasicResponse xmlns="http://www.altinn.no/services/Intermediary/Shipment/IntermediaryInbound/2009/10">
+             <UpdateFormDataBasicResult xmlns:a="http://schemas.altinn.no/services/Intermediary/Receipt/2009/10" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <a:LastChanged>2020-03-16T03:20:27.753</a:LastChanged>
+                <a:ParentReceiptId>0</a:ParentReceiptId>
+                <a:ReceiptHistory>Mar 16 2020  3:02AM - OK - 1/1 forms updated. 0 forms failed validation.
+    Mar 16 2020  1:46AM - OK - 1/1 forms updated. 0 forms failed validation.
+    Jan 10 2020  1:45PM - OK - 1/1 forms updated. 0 forms failed validation.
+    Jan 10 2020  1:44PM - OK - 0/1 forms updated. 1 forms failed validation.
+    Jan 10 2020  1:42PM - OK - 0/1 forms updated. 1 forms failed validation.</a:ReceiptHistory>
+                <a:ReceiptId>28362770</a:ReceiptId>
+                <a:ReceiptStatusCode>OK</a:ReceiptStatusCode>
+                <a:ReceiptText>0/1 forms updated. 1 forms failed validation.</a:ReceiptText>
+                <a:ReceiptTypeName>FormTask</a:ReceiptTypeName>
+                <a:References>
+                   <a:Reference>
+                      <a:ReferenceTypeName>ExternalShipmentReference</a:ReferenceTypeName>
+                      <a:ReferenceValue>EXT_REF5157</a:ReferenceValue>
+                   </a:Reference>
+                   <a:Reference>
+                      <a:ReferenceTypeName>WorkFlowReference</a:ReferenceTypeName>
+                      <a:ReferenceValue>7992038</a:ReferenceValue>
+                   </a:Reference>
+                   <a:Reference>
+                      <a:ReferenceTypeName>OwnerPartyReference</a:ReferenceTypeName>
+                      <a:ReferenceValue>30014500525</a:ReferenceValue>
+                   </a:Reference>
+                </a:References>
+                <a:SubReceipts>
+                   <a:ReceiptExternal>
+                      <a:LastChanged>2020-03-16T03:20:27.753</a:LastChanged>
+                      <a:ParentReceiptId>28362770</a:ParentReceiptId>
+                      <a:ReceiptHistory>Mar 16 2020  3:02AM - OK - FormId 5739781 was successfully created/updated
+    Mar 16 2020  1:46AM - OK - FormId 5739688 was successfully created/updated
+    Jan 10 2020  1:45PM - OK - FormId 5562298 was successfully created/updated
+    Jan 10 2020  1:44PM - ValidationFailed - Error: &lt;SchemaValidationError>The value of the 'spesifikasjonsnummer' attribute does not equal its fixed value.&lt;/SchemaValidationError> :  Error path: 
+    
+    Jan 10 2020  1:42PM - ValidationFailed - Error: &lt;SchemaValidationError>The value of the 'spesifikasjonsnummer' attribute does not equal its fixed value.&lt;/SchemaValidationError> :  Error path:</a:ReceiptHistory>
+                      <a:ReceiptId>28362771</a:ReceiptId>
+                      <a:ReceiptStatusCode>ValidationFailed</a:ReceiptStatusCode>
+                      <a:ReceiptText>Error: &lt;SchemaValidationError>The value of the 'spesifikasjonsnummer' attribute does not equal its fixed value.&lt;/SchemaValidationError> :  Error path:</a:ReceiptText>
+                      <a:ReceiptTypeName>FormTask</a:ReceiptTypeName>
+                      <a:References>
+                         <a:Reference>
+                            <a:ReferenceTypeName>EndUserSystemReference</a:ReferenceTypeName>
+                            <a:ReferenceValue>1</a:ReferenceValue>
+                         </a:Reference>
+                      </a:References>
+                      <a:SubReceipts i:nil="true"/>
+                   </a:ReceiptExternal>
+                </a:SubReceipts>
+             </UpdateFormDataBasicResult>
+          </UpdateFormDataBasicResponse>
+       </s:Body>
+    </s:Envelope>
 
 end
